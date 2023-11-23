@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="product_type">20sp</dimen>
+    <dimen name="product_type_landscape">20sp</dimen>
+    <dimen name="type_width">240dp</dimen>
+    <dimen name="type_height">100dp</dimen>
+    <dimen name="button_width">86dp</dimen>
+    <dimen name="button_width_landscape">350dp</dimen>
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="button_marginStart">20dp</dimen>
+    <dimen name="button_marginTop">5dp</dimen>
+    <dimen name="button_marginStartBuy">10dp</dimen>
+    <dimen name="buy_height">250dp</dimen>
+    <dimen name="buy_marginTop">4dp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="listView_marginLeft">80sp</dimen>
+    <dimen name="listView_marginTop">30dp</dimen>
+</resources>

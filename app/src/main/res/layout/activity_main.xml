@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/product_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/product_type"
+        android:textSize="@dimen/product_type"
+        app:layout_constraintBottom_toTopOf="@+id/gd1"
+        app:layout_constraintEnd_toEndOf="@id/manager_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/manager_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manager"
+        app:layout_constraintBottom_toTopOf="@id/gd1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/product_type"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <TableLayout
+        android:id="@+id/tableID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/quantity"
+        app:layout_constraintEnd_toStartOf="@id/buyBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gd1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/oneBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_marginStart"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/twoBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/threeBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/button_marginStart"
+                android:text="@string/three" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/fourBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_marginStart"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/fiveBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/sixBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/button_marginStart"
+                android:text="@string/six" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/sevenBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_marginStart"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/eightBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/nineBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/button_marginStart"
+                android:text="@string/nine"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/clearBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_marginStart"
+                android:text="@string/clear"
+
+                />
+
+            <Button
+                android:id="@+id/zeroBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/zero" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/total"
+        android:textSize="@dimen/product_type"
+        app:layout_constraintBottom_toTopOf="@id/buyBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tableID"
+        app:layout_constraintTop_toBottomOf="@id/gd1" />
+
+    <Button
+        android:id="@+id/buyBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/buy_marginTop"
+        android:layout_marginEnd="@dimen/button_marginStartBuy"
+        android:text="@string/buy"
+        app:layout_constraintBottom_toBottomOf="@id/tableID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tableID"
+        app:layout_constraintTop_toBottomOf="@id/total_amount" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_marginStart"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:hint="@string/quantity"
+        android:textSize="@dimen/product_type"
+        app:layout_constraintBottom_toTopOf="@id/guiline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tableID" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <ListView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiline2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
